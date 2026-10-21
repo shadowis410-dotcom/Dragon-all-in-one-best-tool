@@ -1,0 +1,6 @@
+{
+  "name": "Auto Account Manager",
+  "description": "Generate and manage multi-account self-bots with proxy rotation, VC 24/7, auto-reactions, and NopeCaptcha server joining.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,45 @@
+# ==============================================================================
+# 🔌 DISCORD SWARM BOT ORCHESTRATOR - 24/7 HOSTING ENVIRONMENT VARIABLES
+# ==============================================================================
+# Use these environment variables on Railway, Render, VPS, or any other hosting
+# to keep your Orchestrator and self-bot swarm online 24/7.
+#
+# INSTRUCTIONS FOR RAILWAY:
+# 1. Go to your Railway Project Dashboard.
+# 2. Select your service, click on the "Variables" tab.
+# 3. Click "New Variable" or "Raw Editor" and paste these variables.
+# 4. Save and deploy.
+# ==============================================================================
+
+# 1. DISCORD MASTER BOT TOKEN (Crucial!)
+# Put your main Discord Bot Token here. This is the bot that will stay online
+# 24/7 and receive commands like !help, !accounts, !joinserver, etc.
+MASTER_BOT_TOKEN="MTU2MjAwOTM5NjYzMTA0NDExNw.Gj2_dF.BjVKKFeGT_tTVvBSELkNZkg3vIfXwANpYXfsvw"
+
+# 2. NOPE CAPTCHA API KEY (Optional - Bypasses Server Captchas)
+# Keep your NopeCaptcha Key secure. Defaults to the preloaded captcha key below:
+NOPE_CAPTCHA_KEY="q4gd0knx5mzt60oe"
+
+# 3. COMMAND PREFIX
+# The character you type before bot commands (e.g., !help, !accounts)
+PREFIX="!"
+
+# 4. REGISTERED BOT OWNER IDS (Crucial!)
+# Comma-separated list of Discord User IDs permitted to run commands.
+# If your account ID is not here, the bot will block your commands for security!
+OWNER_IDS="1546693679660539977,1458799796297924719,1505065613192728636,1222232115027116173,1522255932405579818"
+
+# 5. PRE-LOADED DISCORD SELF-BOT ACCOUNTS (Optional)
+# This is a JSON list of accounts that you want to pre-load automatically 
+# on start. You can leave this blank ("") and just use !addaccount inside 
+# Discord instead!
+# Format: [{"alias": "alias_name", "token": "TOKEN", "proxy": "", "status": "online", "added_via_cmd": true}]
+ACCOUNTS_JSON=""
+
+# ==============================================================================
+# 💡 PRO-TIP FOR 24/7 RUNTIME:
+# When you host on Railway, the filesystem can be ephemeral (gets deleted when 
+# the server restarts). By filling in these environment variables, Railway will 
+# feed these settings to the orchestrator on every boot. Even if Railway reboots,
+# your master bot token, owners, and settings will REMAIN PERFECTLY SAVED!
+# ==============================================================================
